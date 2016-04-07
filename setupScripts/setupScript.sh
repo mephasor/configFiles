@@ -47,4 +47,8 @@ ln -s Projects/configFiles/dotFiles/.vimrc .vimrc
 ln -s Projects/configFiles/dotFiles/.bashrc .bashrc
 ln -s Projects/configFiles/dotFiles/.zshrc .zshrc
 
+# ==================================================
+# Vim Plugins and Stuff
+# =================================================
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 

@@ -2,6 +2,12 @@
 " |              General               |
 " ======================================
 
+" Use the system wide clipboard
+set clipboard=unnamed
+
+" encoding 
+set encoding=utf-8
+
 " History lines 
 set history=2000
 
@@ -9,10 +15,13 @@ set history=2000
 let mapleader = "," 
 let g:mapleader=","
 
-
+set nocompatible
+filetype off
 " ====================================
 " |               UI                 |
 " ====================================
+
+
 
 "Make sure you never get to the bottom.
 set so=7
@@ -108,3 +117,56 @@ func! DeleteTrailingWS()
   exe "normal `z"
 endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
+
+" Code folding
+set foldmethod=indent
+set foldlevel=99
+nnoremap <space> za
+
+let g:SimpylFold_docstring_preview=1
+
+" Add proper PEP8 indentation
+au BufNewFile,BufRead *.py " Affects py files only
+    \ set tabstop=4
+    \ set softtabstop=4
+    \ set shiftwidth=4
+    \ set textwidth=79
+    \ set expandtab
+    \ set autoindent
+    \ set fileformat=unix
+
+" You Complete me fixes
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+" ==================================
+" |        Vundle Setup            |
+" ==================================
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" ==================================
+" |        Plugins                 |
+" ==================================
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'tmhedberg/SimpylFold'
+Plugin 'vim-scripts/indentpython.vim'
+Bundle 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/syntastic'
+Plugin 'nvie/vim-flake8'
+Plugin 'jnurmine/Zenburn'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+
+
+
+
+" Plugins End
+call vundle#end()
+filetype plugin indent on
