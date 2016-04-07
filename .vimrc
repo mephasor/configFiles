@@ -69,6 +69,9 @@ set ai " auto indent
 set si " smart indent 
 set wrap " warparound lines
 
+" Disable autoindent on key stroke
+nnoremap <F8> :setl noai nocin nosi inde=<CR>
+
 " ==================================
 " |    Moving, Tabs and Buffers    |
 " ==================================
