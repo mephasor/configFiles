@@ -2,6 +2,9 @@
 " |              General               |
 " ======================================
 
+" make suer the powerline shows up
+set laststatus=2
+
 " Use the system wide clipboard
 set clipboard=unnamed
 
@@ -21,7 +24,13 @@ filetype off
 " |               UI                 |
 " ====================================
 
+" Highlight current line
+set cursorline
 
+" Show where the 80 char line is
+set colorcolumn=80
+highlight ColorColumn ctermbg=7
+highlight ColorColumn guibg=Black
 
 "Make sure you never get to the bottom.
 set so=7
@@ -53,11 +62,12 @@ set magic
 syntax enable
 set number 
 
-colorscheme murphy
+colorscheme koehler
 set encoding=utf-8
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
+
 
 " ====================================
 " |      Text, Tab and indent        | 

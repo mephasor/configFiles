@@ -52,3 +52,14 @@ ln -s Projects/configFiles/dotFiles/.zshrc .zshrc
 # =================================================
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+# Powerline Fonts
+cd ..
+wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
+wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
+mv PowerlineSymbols.otf ~/.fonts/
+sudo fc-cache -vf ~/.fonts/
+mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
+
+# Setup themes (Base16)
+git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
+
