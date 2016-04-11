@@ -27,3 +27,6 @@ echo pwd
 echo "Installing vim stuff"
 setupScripts/vimInstall 
 
+cd ~/Projects/configFiles
+git submodule init
+git submodule update
