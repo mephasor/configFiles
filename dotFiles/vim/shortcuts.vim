@@ -31,3 +31,5 @@ let g:ycm_autoclose_preview_window_after_completion=1
 " g opens the declaration of function definition.
 map <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
+" leader e opens up NerdTree
+map <leader>e :NERDTree<cr>

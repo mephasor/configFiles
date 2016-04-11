@@ -3,8 +3,8 @@
 echo "Creating temp file directory..."
 mkdir ~/setupLogsTemp
 
-echo "Installing GetDeb and PlayDeb..."
-setupScripts/installGetdebPlayDeb 
+# echo "Installing GetDeb and PlayDeb..."
+# setupScripts/installGetdebPlayDeb 
 
 echo "Repos and Packages..."
 setupScripts/insPackagesAndRepos 
