@@ -9,7 +9,7 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+ZSH_THEME="strug"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
