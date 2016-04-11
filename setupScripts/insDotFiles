@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# ==================================================
+# Dotfiles Setup
+# =================================================
+
+# Create links to dotfiles
+echo "Creating dotfile softlinks"
+cd ~
+
+# Remove existing files in order to be able to add links
+rm .vimrc .bashrc .zshrc .tmux.conf 2> /dev/null
+
+ln -s Projects/configFiles/dotFiles/.vimrc .vimrc
+ln -s Projects/configFiles/dotFiles/.bashrc .bashrc
+ln -s Projects/configFiles/dotFiles/.zshrc .zshrc
+ln -s Projects/configFiles/dotFiles/.tmux.conf .tmux.conf

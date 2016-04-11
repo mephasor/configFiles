@@ -13,18 +13,14 @@ setupScripts/insPackagesAndRepos > ~/setupLogsTemp/reposAndPackages.log
 
 # Clean up 
 setupScripts/cleanUp > ~/setupLogsTemp/cleanUp.log
+
+
 # ==================================================
 # Dotfiles Setup
 # =================================================
+setupScripts/insDotFiles > ~/setupLogsTemp/dotFiles.log
+echo pwd
 
-# Create links to dotfiles
-echo "Creating dotfile softlinks"
-cd ~
-rm .vimrc .bashrc .zshrc
-ln -s Projects/configFiles/dotFiles/.vimrc .vimrc
-ln -s Projects/configFiles/dotFiles/.bashrc .bashrc
-ln -s Projects/configFiles/dotFiles/.zshrc .zshrc
-ln -s Projects/configFiles/dotfiles/.tmux.conf .tmux.conf
 # ==================================================
 # Vim Plugins and Stuff
 # =================================================
