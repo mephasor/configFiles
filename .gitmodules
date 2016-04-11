@@ -4,3 +4,6 @@
 [submodule "submodules/gterminalSolarized"]
 	path = submodules/gterminalSolarized
 	url = https://github.com/Anthony25/gnome-terminal-colors-solarized.git
+[submodule "submodules/gnome-terminalBase16"]
+	path = submodules/gnome-terminalBase16
+	url = https://github.com/chriskempson/base16-gnome-terminal.git
