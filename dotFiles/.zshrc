@@ -82,3 +82,5 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ll = 'ls -hl'
+alias la = 'ls -ahl'
