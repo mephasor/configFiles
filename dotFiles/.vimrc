@@ -27,6 +27,7 @@ filetype plugin indent on
 
 " make suer the powerline shows up
 set laststatus=2
+let g:Powerline_symbols = 'fancy'
 
 " Use the system wide clipboard
 set clipboard=unnamed
