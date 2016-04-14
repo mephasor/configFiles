@@ -32,3 +32,5 @@ Plugin 'tpope/vim-fugitive'
 " Fancy status bar for vim
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
+" Taglist of all functions in the current file
+Plugin 'majutsushi/tagbar'

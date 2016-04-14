@@ -84,3 +84,5 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll='ls -hl'
 alias la='ls -ahl'
+
+alias sgmc='ssh p652d@192.168.1.10'
