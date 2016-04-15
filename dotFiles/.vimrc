@@ -85,6 +85,7 @@ set magic
 
 syntax enable
 set number 
+set relativenumber 
 
 colorscheme koehler
 set encoding=utf-8

@@ -32,4 +32,6 @@ let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " leader e opens up NerdTree
-map <leader>e :NERDTreeToggle<cr>
+map <F9> :NERDTreeToggle<cr>
+" F10 opens the tagbar
+nmap <F10> :TagbarToggle<CR>

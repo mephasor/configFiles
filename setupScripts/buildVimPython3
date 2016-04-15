@@ -32,6 +32,8 @@ make test
 
 sudo checkinstall 
 
-rm /usr/bin/vi /usr/bin/vim > /dev/null
+sudo mv /usr/bin/vi /usr/bin/vi.BKP > /dev/null
+sudo mv /usr/bin/vim /usr/bin/vim.BKP > /dev/null
+
 sudo ln -s /opt/vim74/bin/vim /usr/bin/vim
 sudo ln -s /opt/vim74/bin/vim /usr/bin/vi
