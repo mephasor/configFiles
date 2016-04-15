@@ -35,3 +35,7 @@ map <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 map <F9> :NERDTreeToggle<cr>
 " F10 opens the tagbar
 nmap <F10> :TagbarToggle<CR>
+
+"tabs and stuff
+nmap <leader>n :tabn<CR> " next tab
+nmap <leader>tn :tab new<CR> " new tab

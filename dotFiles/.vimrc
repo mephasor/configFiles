@@ -52,8 +52,6 @@ set cursorline
 
 " Show where the 80 char line is
 set colorcolumn=80
-highlight ColorColumn ctermbg=7
-highlight ColorColumn guibg=Black
 
 "Make sure you never get to the bottom.
 set so=7
@@ -87,11 +85,15 @@ syntax enable
 set number 
 set relativenumber 
 
-colorscheme koehler
+colorscheme solarized
+set background=light
 set encoding=utf-8
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
+
+highlight ColorColumn ctermbg=7
+hi CursorLine ctermbg=7 guibg=7
 
 
 " ====================================
@@ -155,6 +157,8 @@ au BufNewFile,BufRead *.py " Affects py files only
     \ set expandtab
     \ set autoindent
     \ set fileformat=unix
+
+
 
 
 " ==================================
