@@ -120,3 +120,6 @@ fi
 stty -ixon
 
 
+
+# added by Anaconda2 4.0.0 installer
+export PATH="/home/kons/anaconda2/bin:$PATH"

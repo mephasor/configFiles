@@ -164,3 +164,4 @@ au BufNewFile,BufRead *.py " Affects py files only
 " |          Shortcuts             |
 " ==================================
 source ~/Projects/configFiles/dotFiles/vim/shortcuts.vim 
+$PATH=/home/kons/anaconda2/bin:$PATH
