@@ -4,7 +4,7 @@
 # Dotfiles Setup
 # =================================================
 
-DIR="$( cd ../dotFiles && pwd )"
+DIR="$( cd dotFiles && pwd )"
 # Create links to dotfiles
 echo "Creating dotfile softlinks"
 cd ~
