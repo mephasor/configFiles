@@ -41,8 +41,7 @@ set history=2000
 set nocompatible
 filetype off
 
-set listchars=eol:⏎,tab:␉·,trail:␠,nbsp:⎵
-
+set listchars=tab:▸\ ,eol:¬
 " ====================================
 " |               UI                 |
 " ====================================

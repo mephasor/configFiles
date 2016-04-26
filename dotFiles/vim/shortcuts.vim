@@ -19,6 +19,9 @@ map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove
 
+" show hidden stuff on leader l
+nmap <leader>l :set list!<CR>
+
 " map 0 to the first char that is not blank
 map 0 ^
 
@@ -36,6 +39,3 @@ map <F9> :NERDTreeToggle<cr>
 " F10 opens the tagbar
 nmap <F10> :TagbarToggle<CR>
 
-"tabs and stuff
-nmap <leader>n :tabn<CR> " next tab
-nmap <leader>tn :tab new<CR> " new tab

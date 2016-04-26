@@ -27,10 +27,17 @@ Plugin 'kien/ctrlp.vim'
 
 " GIT integration in vim
 Plugin 'tpope/vim-fugitive'
-
+" GIT changes in file are displayed next to line numbers
+Plugin 'airblade/vim-gitgutter'
 
 " Fancy status bar for vim
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 " Taglist of all functions in the current file
 Plugin 'majutsushi/tagbar'
+
+" ack vim for searching in files
+Plugin 'mileszs/ack.vim'
+
+" Commentig and uncommenting in an easy fashion.
+Plugin 'scrooloose/nerdcommenter'
