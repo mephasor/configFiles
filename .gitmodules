@@ -7,3 +7,6 @@
 [submodule "submodules/gnome-terminalBase16"]
 	path = submodules/gnome-terminalBase16
 	url = https://github.com/chriskempson/base16-gnome-terminal.git
+[submodule "submodules/gnome-terminal-colors-monokai"]
+	path = submodules/gnome-terminal-colors-monokai
+	url = git://github.com/pricco/gnome-terminal-colors-monokai.git
