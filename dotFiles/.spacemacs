@@ -18,7 +18,9 @@
      ranger
      python
      )
-   dotspacemacs-additional-packages '()
+   dotspacemacs-additional-packages '(
+                                      evil-vimish-fold
+                                      powerline)
    dotspacemacs-excluded-packages '()
    dotspacemacs-delete-orphan-packages t))
 
@@ -212,6 +214,14 @@ before packages are loaded. If you are unsure, you should try in setting them in
 (defun dotspacemacs/user-config ()
  ; Set up git respository folder for magit
  (setq magit-repository-directories '("~/Project/")) 
+
+ ; Folding like in vim. Adds zf and zd shortcuts.
+ (require 'evil-vimish-fold)
+ (evil-vimish-fold-mode 1)
+
+ ; powerline vars
+ (require 'powerline)
+ (setq powerline-arrow-shape 'curve)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will

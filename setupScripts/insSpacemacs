@@ -3,8 +3,12 @@
 # Stop on first error
 set -e
 
-sudo apt-get install -y emacs git 
+sudo apt-get install -y emacs git ack-grep
+# rm ~/.emacs.d
+#git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
-rm ~/.emacs.d
-git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
-
+#install font
+cd ~/Downloads
+wget https://github.com/adobe-fonts/source-code-pro/archive/2.010R-ro/1.030R-it.zip
+unzip 1.030R-it.zip
+cp source-code-pro-2.010R-ro-1.030R-it/TTF/* ~/.fonts
