@@ -133,6 +133,13 @@ bindsym $mod+Shift+8 move container to workspace $workspace8
 bindsym $mod+Shift+9 move container to workspace $workspace9
 bindsym $mod+Shift+0 move container to workspace $workspace10
 
+
+
+# Dual monitor bindings
+bindsym $mod+Ctrl+h move workspace to output left
+bindsym $mod+Ctrl+l move workspace to output right
+
+
 assign [class="Emacs24"] $workspace2
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -191,12 +198,14 @@ bar {
 }
 
 #Wallpaper:
-exec ~/Projects/i3Scripts/wallpaper/getFlickrWallpaper.py
+exec ~/Projects/configFiles/submodules/i3Scripts/wallpaper/getFlickrWallpaper.py
 
 # Startup applications
 exec i3-sensible-terminal
 exec emacs 
 #Enable transparent terminal
-exec compton -i 0.5 --active-opacity 2
+exec compton -i 0.85 --active-opacity 1
+# setup local var
+exec ~/.i3locals 
 
 exec_always gsettings set org.gnome.desktop.background show-desktop-icons false
