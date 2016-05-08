@@ -10,3 +10,6 @@
 [submodule "submodules/gnome-terminal-colors-monokai"]
 	path = submodules/gnome-terminal-colors-monokai
 	url = git://github.com/pricco/gnome-terminal-colors-monokai.git
+[submodule "submodules/i3Scripts"]
+	path = submodules/i3Scripts
+	url = https://github.com/mephasor/i3Scripts.git
