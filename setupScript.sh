@@ -32,6 +32,13 @@ setupScripts/insDotFiles
 echo "Installing vim stuff"
 setupScripts/vimInstall 
 
+echo "Installing spacemacs"
+setupScripts/insSpacemacs
+
+echo "Installing i3"
+setupScripts/insI3
+
+
 cd $DIR  
 git submodule init
 git submodule update
