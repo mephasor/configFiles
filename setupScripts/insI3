@@ -13,3 +13,8 @@ sudo apt-get --allow-unauthenticated install sur5r-keyring
 sudo apt-get update
 sudo apt-get install -y i3
 sudo apt-get install -y feh compton rofi
+
+# set dofile links
+ln -s ~/Projects/configFiles/dotFiles/i3 ~/.config/i3
+ln -s ~/Projects/configFiles/dotFiles/i3status ~/.config/i3status
+ln -s ~/Projects/configFiles/dotFiles/.compton.conf ~/.compton.conf

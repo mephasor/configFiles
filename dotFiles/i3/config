@@ -204,7 +204,7 @@ exec ~/Projects/configFiles/submodules/i3Scripts/wallpaper/getFlickrWallpaper.py
 exec i3-sensible-terminal
 exec emacs 
 #Enable transparent terminal
-exec compton -i 0.85 --active-opacity 1
+exec compton -i 0.85 --active-opacity 0.9
 # setup local var
 exec ~/.i3locals 
 

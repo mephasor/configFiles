@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+set -e
 # Add repositories needed
 echo "Adding Repositories..." 
 
@@ -23,10 +23,10 @@ sudo apt-get install -y git zsh
 sudo apt-get install -y python3.5 python-dev python3-dev python-pip python3-pip 
 sudo apt-get install -y python3.5-dev build-essential libssl-dev libffi-dev
 sudo apt-get install -y synaptic vlc 
-sudo apt-get install -y gimp gimp-data gimp-plugin-registry gimp-data-extras
+#sudo apt-get install -y gimp gimp-data gimp-plugin-registry gimp-data-extras
 sudo apt-get install -y y-ppa-manager bleachbit
 sudo apt-get install -y openjdk-7-jre oracle-java8-installer 
-sudo apt-get install -y flashplugin-installer 
+#sudo apt-get install -y flashplugin-installer 
 sudo apt-get install -y unace unrar zip unzip p7zip-full p7zip-rar sharutils rar 
 sudo apt-get install -y uudeview mpack arj cabextract file-roller 
 sudo apt-get install -y libxine1-ffmpeg mencoder flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-dev mpeg2dec 
@@ -37,9 +37,9 @@ sudo apt-get install -y tmux
 sudo apt-get install -y htop
 sudo apt-get install -y vim
 
-echo "Install DVD Stuff"
-# Take care of encrypted DVDs
-./installDVDStuff
+# echo "Install DVD Stuff"
+# # Take care of encrypted DVDs
+# ./installDVDStuff
 
 echo "Install Chrome Browser"
 #Install Chrome

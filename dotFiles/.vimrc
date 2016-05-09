@@ -85,7 +85,7 @@ set number
 set relativenumber 
 
 colorscheme solarized
-set background=light
+set background=dark
 set encoding=utf-8
 
 " Use Unix as the standard file type
