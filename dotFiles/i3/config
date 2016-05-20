@@ -204,7 +204,7 @@ exec ~/Projects/configFiles/submodules/i3Scripts/wallpaper/getBingWallpaper.py
 exec i3-sensible-terminal
 exec emacs 
 #Enable transparent terminal
-exec compton -i 0.85 --active-opacity 0.9
+exec compton -i 0.85
 # setup local var
 exec ~/.i3locals 
 

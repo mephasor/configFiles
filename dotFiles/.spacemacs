@@ -106,12 +106,12 @@ before packages are loaded. If you are unsure, you should try in setting them in
              :base-extension "org"
              )))
     (setq org-todo-keywords
-          '((sequence "TODO(t)" "NEXT(n)" "IN PROGRESS(p)" "|" "DONE(d!)")))
+          '((sequence "TODO(t)" "NEXT(n)" "IN PROGRESS(p)" "|" "DONE(d!)" "CANCELLED(c!)")))
     (setq org-todo-keyword-faces
           '(("TODO" . org-warning)
             ("NEXT" . "orange")
             ("IN PROGRESS" . (:foreground "yellow" :weight bold))
-            ("DONE" . "green")))
+            ("DONE" . "green") ("CANCELLED" . "red")))
 
     ); end of org vars
   )
