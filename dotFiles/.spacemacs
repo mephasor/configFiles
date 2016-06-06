@@ -106,21 +106,28 @@ before packages are loaded. If you are unsure, you should try in setting them in
              :base-extension "org"
              )))
     (setq org-todo-keywords
-          '((sequence "TODO(t)" "NEXT(n)" "IN PROGRESS(p)" "|" "DONE(d!)" "CANCELLED(c!)")))
+          '((sequence "TODO(t)" "NEXT(n)" "IN PROGRESS(p)" "WAITING(w@/!)" "|" "DONE(d!)" "CANCELLED(c!)")))
     (setq org-todo-keyword-faces
           '(("TODO" . org-warning)
             ("NEXT" . "orange")
             ("IN PROGRESS" . (:foreground "yellow" :weight bold))
+            ("WAITING" . "org-warning")
             ("DONE" . "green") ("CANCELLED" . "red")))
     (setq org-agenda-custom-commands
           '(("K" "Kons Agenda"
              ((agenda "" ((org-agenda-ndays 7))) 
               (todo "IN PROGRESS")
               (todo "NEXT")
+              (todo "DONE")
+              (todo "WAITING")
               (todo "TODO"))
              ((org-agenda-compact-blocks t))) ;; options set here apply to the entire block
             ;; ...other commands here
             ))
+    ;; Refile targets
+    (setq org-refile-targets
+          '(("todo.org" :maxlevel . 1)
+            ("done.org" :maxlevel . 2)))
     ); end of org vars
   )
 
@@ -145,6 +152,7 @@ before packages are loaded. If you are unsure, you should try in setting them in
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(org-agenda-files (quote ("~/Projects/konsstuff/todo.org")))
+ '(paradox-github-token t)
  '(safe-local-variable-values
    (quote
     ((org-todo-keyword-faces
