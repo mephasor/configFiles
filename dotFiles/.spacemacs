@@ -116,11 +116,11 @@ before packages are loaded. If you are unsure, you should try in setting them in
     (setq org-agenda-custom-commands
           '(("K" "Kons Agenda"
              ((agenda "" ((org-agenda-ndays 7))) 
-              (todo "IN PROGRESS")
-              (todo "NEXT")
-              (todo "DONE")
-              (todo "WAITING")
-              (todo "TODO"))
+              (todo "IN PROGRESS" ((org-agenda-overriding-header "IN PROGRESS items:")))
+              (todo "NEXT" ((org-agenda-overriding-header "NEXT items:")))
+              (todo "DONE" ((org-agenda-overriding-header "To Report items:")))
+              (todo "WAITING" ((org-agenda-overriding-header "WAITING items:")))
+              (todo "TODO" ((org-agenda-overriding-header "TODO list:"))))
              ((org-agenda-compact-blocks t))) ;; options set here apply to the entire block
             ;; ...other commands here
             ))
