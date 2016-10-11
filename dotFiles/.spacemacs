@@ -124,9 +124,18 @@ before packages are loaded. If you are unsure, you should try in setting them in
             ;; ...other commands here
             ("D" "Kons DOne"
              ((agenda "" ((org-agenda-ndays 7))) 
-              (todo "DONE" ((org-agenda-overriding-header "DONE list:"))))
+              (todo "DONE" ((org-agenda-overriding-header "Phd to report:")(org-agenda-files (quote ("~/Projects/konsstuff/phd.org")))))
+              (todo "DONE" ((org-agenda-overriding-header "Pers. DONE:")(org-agenda-files (quote ("~/Projects/konsstuff/todo.org")))))
+              )
              ((org-agenda-compact-blocks t)))
-			)          
+            ("T" "Kons DOne"
+             ((agenda "" ((org-agenda-ndays 7))) 
+              (todo "TODO" ((org-agenda-overriding-header "Phd TODO:")(org-agenda-files (quote ("~/Projects/konsstuff/phd.org")))))
+              (todo "TODO" ((org-agenda-overriding-header "Pers. TODO:")(org-agenda-files (quote ("~/Projects/konsstuff/todo.org")))))
+              (todo "TODO" ((org-agenda-overriding-header "CS3113 TODO:")(org-agenda-files (quote ("~/Projects/konsstuff/cs3113F16.org")))))
+              )
+             ((org-agenda-compact-blocks t)))
+			)
     )
     ;; Refile targets
     (setq org-refile-targets
