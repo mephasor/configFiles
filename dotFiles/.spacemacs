@@ -119,7 +119,7 @@ before packages are loaded. If you are unsure, you should try in setting them in
               (todo "IN PROGRESS" ((org-agenda-overriding-header "IN PROGRESS items:")))
               (todo "NEXT" ((org-agenda-overriding-header "NEXT items:")))
               (todo "WAITING" ((org-agenda-overriding-header "WAITING items:")))
-              (todo "TODO" ((org-agenda-overriding-header "TODO list:"))))
+              )
              ((org-agenda-compact-blocks t))) ;; options set here apply to the entire block
             ;; ...other commands here
             ("D" "Kons DOne"
