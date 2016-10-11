@@ -118,12 +118,16 @@ before packages are loaded. If you are unsure, you should try in setting them in
              ((agenda "" ((org-agenda-ndays 7))) 
               (todo "IN PROGRESS" ((org-agenda-overriding-header "IN PROGRESS items:")))
               (todo "NEXT" ((org-agenda-overriding-header "NEXT items:")))
-              (todo "DONE" ((org-agenda-overriding-header "To Report items:")))
               (todo "WAITING" ((org-agenda-overriding-header "WAITING items:")))
               (todo "TODO" ((org-agenda-overriding-header "TODO list:"))))
              ((org-agenda-compact-blocks t))) ;; options set here apply to the entire block
             ;; ...other commands here
-            ))
+            ("D" "Kons DOne"
+             ((agenda "" ((org-agenda-ndays 7))) 
+              (todo "DONE" ((org-agenda-overriding-header "DONE list:"))))
+             ((org-agenda-compact-blocks t)))
+			)          
+    )
     ;; Refile targets
     (setq org-refile-targets
           '(("todo.org" :maxlevel . 1)
@@ -151,7 +155,7 @@ before packages are loaded. If you are unsure, you should try in setting them in
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(org-agenda-files (quote ("~/Projects/konsstuff/todo.org")))
+ '(org-agenda-files (quote ("~/Projects/konsstuff/todo.org" "~/Projects/konsstuff/cs3113F16.org" "~/Projects/konsstuff/phd.org")))
  '(paradox-github-token t)
  '(safe-local-variable-values
    (quote
