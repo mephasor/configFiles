@@ -1,25 +1,4 @@
-" ==================================
-" |        Vundle Setup            |
-" ==================================
-" 
-" Loading the plugins first in order to make all parameters available.
-"
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" ==================================
-" |        Plugins                 |
-" ==================================
-Plugin 'gmarik/Vundle.vim'
-
-" Load all the plugins
-source ~/Projects/configFiles/dotFiles/vim/loadPlugins.vim
-
-" Plugins End
-call vundle#end()
-filetype plugin indent on
-
+" source ~/Projects/configFiles/dotFiles/vim/.vimPluginConfig.vim 
 
 " ======================================
 " |              General               |
@@ -46,8 +25,7 @@ set listchars=tab:▸\ ,eol:¬
 " |               UI                 |
 " ====================================
 
-" Highlight current line
-set cursorline
+
 
 " Show where the 80 char line is
 set colorcolumn=80
@@ -84,15 +62,18 @@ syntax enable
 set number 
 set relativenumber 
 
-colorscheme solarized
 set background=dark
 set encoding=utf-8
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
 
-highlight ColorColumn ctermbg=7
-hi CursorLine ctermbg=7 guibg=7
+" Highlight current line
+set cursorline
+
+" Highlight current line color
+"highlight ColorColumn ctermbg=7
+"hi CursorLine ctermbg=7 guibg=7
 
 
 " ====================================
@@ -164,4 +145,3 @@ au BufNewFile,BufRead *.py " Affects py files only
 " |          Shortcuts             |
 " ==================================
 source ~/Projects/configFiles/dotFiles/vim/shortcuts.vim 
-$PATH=/home/kons/anaconda2/bin:$PATH
