@@ -13,3 +13,6 @@
 [submodule "submodules/i3Scripts"]
 	path = submodules/i3Scripts
 	url = https://github.com/mephasor/i3Scripts.git
+[submodule "submodules/tpm"]
+	path = submodules/tpm
+	url = https://github.com/tmux-plugins/tpm

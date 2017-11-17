@@ -28,6 +28,12 @@ map 0 ^
 " Fold code using the space key
 nnoremap <space> za
 
+" Navigate using visual lines, not real lines
+nnoremap k gk
+nnoremap gk k 
+nnoremap j gj 
+nnoremap gj j
+
 " Vundle 
 " You Complete me fixes
 let g:ycm_autoclose_preview_window_after_completion=1
