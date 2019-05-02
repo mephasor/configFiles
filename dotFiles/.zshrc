@@ -19,3 +19,5 @@ alias la='ls -ahl'
 alias pip3.5='python3.5 -m pip'
 
 alias sgmc='ssh p652d@192.168.1.10'
+
+export wsasCertPath=/Wentech/repos/wsas-java-bridge/dist/
