@@ -15,9 +15,15 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 alias ll='ls -hl'
 alias la='ls -ahl'
+alias vi='vim'
 
 alias pip3.5='python3.5 -m pip'
 
-alias sgmc='ssh p652d@192.168.1.10'
 
 export wsasCertPath=/Wentech/repos/wsas-java-bridge/dist/
+alias adoLive='ssh kons@ado.wentechsolutions.com'
+alias digSsh='ssh kons@138.197.154.8'
+alias anessaLive='ssh kons@anessa.wentechsolutions.com'
+alias adoAWSDev='ssh -i ~/Wentech/wentech-comp.pem ec2-user@52.60.154.48'
+
+source /usr/share/nvm/init-nvm.sh
