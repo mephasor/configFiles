@@ -384,6 +384,13 @@ def init_widgets_list():
                     #unfocused_border = 'border'
                 ),
 
+                widget.CurrentScreen(
+                    active_text="⬤",
+                    inactive_text="⬤",
+                    foreground = colors[5],
+                    background = colors[3],
+                ),
+
                widget.CurrentLayoutIcon(
                        custom_icon_paths = [os.path.expanduser("~/.config/qtile/icons")],
                        foreground = colors[5],
@@ -400,6 +407,12 @@ def init_widgets_list():
                         ),
 
 
+                widget.OpenWeather(
+                    cityid="5957776",
+                    format="{main_temp} °{units_temperature} {humidity}%",
+                    foreground = colors[5],
+                    background = colors[4]
+                ),
                 widget.Net(
                          font="Noto Sans",
                          fontsize=12,
@@ -424,7 +437,7 @@ def init_widgets_list():
 
                widget.Memory(
                         font="Noto Sans",
-                        format = '{MemUsed: .0f}M/{MemTotal: .0f}G',
+                        format = '{MemUsed: .0f}G/{MemTotal: .0f}G',
                         update_interval = 1,
                         fontsize = 12,
                         padding = 3,
@@ -441,8 +454,7 @@ def init_widgets_list():
                         format="%Y-%m-%d %H:%M"
                         ),
 
-                widget.BatteryIcon(
-
+                widget.Battery(
                 ),
 
                widget.Systray(
