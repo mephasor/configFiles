@@ -1,0 +1,10 @@
+# Ignore everything
+*
+# Exceptions
+!.gitignore
+!omf
+!pcmanfm
+!rofi
+!qtile
+!fish
+!alacritty
