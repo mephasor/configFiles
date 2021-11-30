@@ -68,6 +68,8 @@ keys = [
     Key([mod], "t", lazy.spawn('xterm')),
     Key([mod], "r", lazy.spawn('nwggrid -p -f -o 0.4')),
     Key([mod], "d", lazy.spawn('rofi -show drun -show-icons')),
+# lock screen
+    Key([mod], "b", lazy.spawn('sh -c i3lock')),
     Key([mod], "Escape", lazy.spawn('xkill')),
     Key([mod], "Return", lazy.spawn('alacritty')),
     Key([mod], "KP_Enter", lazy.spawn('alacritty')),
