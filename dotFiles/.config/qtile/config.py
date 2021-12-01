@@ -363,10 +363,41 @@ def init_widgets_list():
             other_current_screen_border=colors[13],
             other_screen_border=colors[17],
             disable_drag=True
-
-
-
                         ),
+
+                widget.TextBox(
+                "",
+                foreground = colors[15],
+                background = colors[3],
+                padding = 0
+                ),
+# 
+# 
+               widget.CurrentLayout(
+                      font = "Noto Sans Bold",
+                      fontsize = 12,
+                      foreground = colors[5],
+                      background = colors[3]
+                        ),
+               widget.CurrentLayoutIcon(
+                       custom_icon_paths = [os.path.expanduser("~/.config/qtile/icons")],
+                       foreground = colors[5],
+                       background = colors[3],
+                       padding = 0,
+                       scale = 0.7
+                       ),
+                widget.CurrentScreen(
+                    active_text="⬤",
+                    inactive_text="⬤",
+                    foreground = colors[5],
+                    background = colors[3],
+                ),
+                widget.TextBox(
+                "",
+                foreground = colors[3],
+                background = colors[20],
+                padding = 0
+                ),
                 widget.TaskList(
                     highlight_method = 'border', # or block
                     icon_size=17,
@@ -386,35 +417,8 @@ def init_widgets_list():
                     #unfocused_border = 'border'
                 ),
 
-                widget.CurrentScreen(
-                    active_text="⬤",
-                    inactive_text="⬤",
-                    foreground = colors[5],
-                    background = colors[3],
-                ),
+                widget.TextBox("",foreground = colors[20],background = colors[19],padding = 0),
 
-               widget.CurrentLayoutIcon(
-                       custom_icon_paths = [os.path.expanduser("~/.config/qtile/icons")],
-                       foreground = colors[5],
-                       background = colors[3],
-                       padding = 0,
-                       scale = 0.7
-                       ),
-
-               widget.CurrentLayout(
-                      font = "Noto Sans Bold",
-                      fontsize = 12,
-                      foreground = colors[5],
-                      background = colors[3]
-                        ),
-
-
-                widget.OpenWeather(
-                    cityid="5957776",
-                    format="{main_temp} °{units_temperature} {humidity}%",
-                    foreground = colors[5],
-                    background = colors[4]
-                ),
                 widget.Net(
                          font="Noto Sans",
                          fontsize=12,
@@ -425,6 +429,7 @@ def init_widgets_list():
                          background=colors[19],
                          padding = 5,
                          ),
+                widget.TextBox("",foreground = colors[19],background = colors[22],padding = 0),
 
                 widget.CPU(
                         font="Noto Sans",
@@ -436,6 +441,7 @@ def init_widgets_list():
                         padding = 5,
                         mouse_callbacks = {'Button1': lambda : qtile.cmd_spawn(myTerm + ' -e htop')},
                        ),
+                widget.TextBox("",foreground = colors[22],background = colors[16],padding = 0),
 
                widget.Memory(
                         font="Noto Sans",
@@ -449,6 +455,15 @@ def init_widgets_list():
                         mouse_callbacks = {'Button1': lambda : qtile.cmd_spawn(myTerm + ' -e htop')},
                        ),
 
+                widget.TextBox("",foreground = colors[16],background = colors[4],padding = 0),
+                widget.OpenWeather(
+                    cityid="5957776",
+                    format="{main_temp} °{units_temperature} {humidity}%",
+                    foreground = colors[5],
+                    background = colors[4]
+                ),
+
+               widget.TextBox("",foreground = colors[4],background = colors[23],padding = 0),
                widget.Clock(
                         foreground = colors[9],
                         background = colors[23],
@@ -456,14 +471,22 @@ def init_widgets_list():
                         format="%Y-%m-%d %H:%M"
                         ),
 
+                widget.TextBox("",foreground = colors[23],background = colors[10],padding = 0),
                 widget.Battery(
                 ),
 
-               widget.Systray(
+                widget.TextBox("",foreground = colors[10],background = colors[10],padding = 0),
+                widget.Systray(
                        background=colors[10],
                        icon_size=20,
                        padding = 4
                        ),
+                widget.Sep(
+                        linewidth = 1,
+                        padding = 10,
+                        foreground = colors[10],
+                        background = colors[10]
+                        ),              #
               ]
     return widgets_list
 widgets_list = init_widgets_list()
