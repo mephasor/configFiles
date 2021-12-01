@@ -2,10 +2,10 @@
 *
 # Exceptions
 !.gitignore
-!omf
-!pcmanfm
-!rofi
-!qtile
-!fish
-!alacritty
-!ranger
+!omf/*
+!pcmanfm/*
+!rofi/*
+!qtile/*
+!fish/*
+!alacritty/*
+!ranger/*
