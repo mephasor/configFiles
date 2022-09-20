@@ -131,19 +131,13 @@ alias big="expac -H M '%m\t%n' | sort -h | nl"              # Sort installed pac
 alias gitpkg='pacman -Q | grep -i "\-git" | wc -l'          # List amount of -git packages
 
 alias vi="vim"
-alias work='cd /home/kons/Wentech/docker/db_admin'
+alias work='cd /home/kons/Wentech/db_admin'
 
 # Get fastest mirrors
 alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
 alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
 alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
 alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
-
-# Help people new to Arch
-alias apt='man pacman'
-alias apt-get='man pacman'
-alias please='sudo'
-alias tb='nc termbin.com 9999'
 
 # Cleanup orphaned packages
 alias cleanup='sudo pacman -Rns (pacman -Qtdq)'
@@ -156,7 +150,17 @@ alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 
 
 ## Run neofetch if session is interactive
-if status --is-interactive && type -q neofetch
-       neofetch
-       end
+#if status --is-interactive && type -q neofetch
+#       neofetch
+#       end
 
+# WORK aliases
+
+alias devSSH='ssh kons@dev.anessa.com'
+alias qaSSH='ssh kons@qa.anessa.com'
+alias adoQA='ssh kons@adoqa.anessa.com'
+alias adaLive='ssh kons@ada.anessa.com'
+alias adoLive='ssh kons@ado.anessa.com'
+alias demoSSH='ssh kons@demo.anessa.com'
+alias adaDemo='ssh kons@adademo.anessa.com'
+alias dockerSSH='ssh kons@docker.anessa.com'
