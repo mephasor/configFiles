@@ -6,16 +6,37 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="strug"
 USE_POWERLIN="true"
 
-plugins=(git)
+plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
+
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/texlive/2021/bin/x86_64-linux:$PATH
 
-alias ll='ls -hl'
-alias la='ls -ahl'
+#alias ll='ls -hl'
+#alias la='ls -ahl'
+
+if ! command -v batcat &> /dev/null
+then
+    alias cat=batcat
+fi
+
+if ! command -v batcat &> /dev/null
+then
+    alias ls='exa -al --color=always --group-directories-first --icons' # preferred listing
+    alias la='exa -a --color=always --group-directories-first --icons'  # all files and dirs
+    alias ll='exa -l --color=always --group-directories-first --icons'  # long format
+    alias lt='exa -aT --color=always --group-directories-first --icons' # tree listing
+    alias l.="exa -a | egrep '^\.'"                                     # show only dotfiles
+fi
+
+alias ip="ip -color"
+
+alias printJson="python -m json.tool" 
+
 alias vi='vim'
 alias work='cd /home/kons/Wentech/docker/db_admin/'
 
