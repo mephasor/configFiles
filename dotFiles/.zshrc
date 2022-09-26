@@ -24,7 +24,7 @@ then
     alias cat=batcat
 fi
 
-if ! command -v batcat &> /dev/null
+if ! command -v exa &> /dev/null
 then
     alias ls='exa -al --color=always --group-directories-first --icons' # preferred listing
     alias la='exa -a --color=always --group-directories-first --icons'  # all files and dirs
