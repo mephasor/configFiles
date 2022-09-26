@@ -19,12 +19,12 @@ export PATH=$HOME/bin:/usr/local/bin:/usr/local/texlive/2021/bin/x86_64-linux:$P
 #alias ll='ls -hl'
 #alias la='ls -ahl'
 
-if ! command -v batcat &> /dev/null
+if command -v batcat &> /dev/null
 then
     alias cat=batcat
 fi
 
-if ! command -v exa &> /dev/null
+if command -v exa &> /dev/null
 then
     alias ls='exa -al --color=always --group-directories-first --icons' # preferred listing
     alias la='exa -a --color=always --group-directories-first --icons'  # all files and dirs
