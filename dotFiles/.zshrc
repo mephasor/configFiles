@@ -22,6 +22,9 @@ export PATH=$HOME/bin:/usr/local/bin:/usr/local/texlive/2021/bin/x86_64-linux:$P
 if command -v batcat &> /dev/null
 then
     alias cat=batcat
+elif command -v bat &> /dev/null
+then
+    alias cat=bat
 fi
 
 if command -v exa &> /dev/null
