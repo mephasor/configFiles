@@ -1,0 +1,2 @@
+[debian]
+homeserver ansible_host=192.168.2.23 ansible_user=kons ansible_connection=ssh ansible_ssh_private_key_file=/home/kons/.ssh/id_rsa
