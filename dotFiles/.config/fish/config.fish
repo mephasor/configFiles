@@ -164,3 +164,13 @@ alias adoLive='ssh kons@ado.anessa.com'
 alias demoSSH='ssh kons@demo.anessa.com'
 alias adaDemo='ssh kons@adademo.anessa.com'
 alias dockerSSH='ssh kons@docker.anessa.com'
+alias anessaServer='ssh kons@anessa-server'
+alias coopSSH='ssh kons@coop.anessa.com'
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+if test -f /home/kons/miniconda3/bin/conda
+    eval /home/kons/miniconda3/bin/conda "shell.fish" "hook" $argv | source
+end
+# <<< conda initialize <<<
+

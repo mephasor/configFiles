@@ -55,7 +55,8 @@ alias adaLive='ssh kons@ada.anessa.com'
 alias adoLive='ssh kons@ado.anessa.com'
 alias demoSSH='ssh kons@demo.anessa.com'
 alias adaDemo='ssh kons@adademo.anessa.com'
-alias dockerSSH='ssh kons@docker.anessa.com'
+alias coopSSH='ssh kons@coop.anessa.com'
+alias anessaServer='ssh kons@anessa-server'
 
 # Replace ls with exa
 alias ls='exa -al --color=always --group-directories-first --icons' # preferred listing

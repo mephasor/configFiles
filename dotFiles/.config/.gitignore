@@ -7,5 +7,6 @@
 !rofi/**
 !qtile/**
 !fish/**
+!nvim/**
 !alacritty/**
 !ranger/**
