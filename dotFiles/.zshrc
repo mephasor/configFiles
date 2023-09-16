@@ -40,7 +40,7 @@ alias ip="ip -color"
 
 alias printJson="python -m json.tool" 
 
-alias vi='vim'
+alias vi='nvim'
 alias work='cd /home/kons/Wentech/docker/db_admin/'
 
 #alias ll='ls -hl'
@@ -94,7 +94,6 @@ alias hw='hwinfo --short'                                   # Hardware Info
 alias big="expac -H M '%m\t%n' | sort -h | nl"              # Sort installed packages according to size in MB
 alias gitpkg='pacman -Q | grep -i "\-git" | wc -l'          # List amount of -git packages
 
-alias vi="vim"
 alias work='cd /home/kons/Wentech/db_admin'
 
 # Get fastest mirrors
